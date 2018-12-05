@@ -1,2 +1,2 @@
-# MushroomPhylogeny
-For lab on Evolutionary Patterns course
+# Mushroom Phylogeny
+For lab on Evolutionary Patterns course.
