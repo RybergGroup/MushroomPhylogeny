@@ -49,7 +49,7 @@ Start by downloading your sequences from StudentPortalen (**Documents -> Labs ->
 
 Trim poor quality bases and assemble into a contig (**Assemble -> Reassemble everything with CAP3 external assembler plugin**). You can now edit the consensus sequence (only if necessary) or reverse complement it if it is in the incorrect orientation. Save the consensus sequence (**File -> Save consensus as Fasta**) (be sure to give it a good name - the name of the mushroom and the gene).
 
-*Imp*: Verify that you actually did amplify a mushroom and the correct gene by [BLASTing](https://blast.ncbi.nlm.nih.gov/Blast.cgi) your consensus sequence.
+*Imp*: Verify that you actually did amplify a mushroom sequence by [BLASTing](https://blast.ncbi.nlm.nih.gov/Blast.cgi) your consensus sequence.
 
 
 ## 2. Assembling datasets for each locus
@@ -94,11 +94,15 @@ I recommend NOT having any white spaces in your fasta header as it is likely tha
 
 ## 3. Multiple Sequence Alignment
 
-You will work with the multiple sequence alignments (MSA) in the program **AliView**. This program allows you to manipulate the sequences and the MSA, but does not do automated multiple sequence alignment itself. However, [Muscle](http://www.drive5.com/muscle/) comes packed with AliView and can be called from within the main view, doing the MSA seamlessly. There are many different MSA programs; a commonly used program is ClustalW but it is now dated, and Muscle performs much better. Another commonly used
-program that performs well in benchmark studies is mafft; but mafft is difficult to pack with other
-software and has to be installed separately. However, no matter which program you use for the
-alignment it is recommended to check the alignment manually as no program works perfectly.
-To do the multiple alignment we first need to combine the individual sequences of each gene into a
-single file (so three different files in total). This can be done either by adding them one by one in
-AliView, or to just concatenate (and possibly edit in a text editor) all single sequence files in the
-terminal.
+You will work with the multiple sequence alignments (MSA) in the program **AliView**. This program allows you to manipulate the sequences and the MSA, but does not do automated multiple sequence alignment itself. However, [Muscle](http://www.drive5.com/muscle/) comes packed with AliView and can be called from within the main view, doing the MSA seamlessly. There are many different MSA programs; a commonly used program is [ClustalW](https://www.ebi.ac.uk/Tools/msa/clustalw2/) but it is now dated, and Muscle performs much better. Another commonly used
+program that performs well in benchmark studies is [MAFFT](https://mafft.cbrc.jp/alignment/software/); but MAFFT is difficult to pack with other software and has to be installed separately. You could however, use the [online mafft aligner](https://mafft.cbrc.jp/alignment/server/). 
+
+However, no matter which program you use for the alignment it is recommended to check the alignment manually as no program works perfectly.
+
+To do the multiple alignment we first need to combine the individual sequences of each gene into a single file (so three different files in total). This can be done either by adding them one by one in AliView, or to just concatenate (and possibly edit in a text editor) all single sequence files in the terminal/command prompt.
+
+<details>
+<summary>On Macs/Linux</summary>
+<br>
+Open the **terminal** and navigate to the folder where your fasta files are present. This can be done by using the command **cd** 
+</details>
