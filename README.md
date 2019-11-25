@@ -16,6 +16,8 @@ The objective of this lab is to use the sequence reads that you generated in con
 4) Evaluating the results 
 
 ## Programs required
+1) A simple text editor to view and edit files in plain text format. I recommend [TextWrangler or BBEdit](https://www.barebones.com/products/textwrangler/) for Mac and [Notepad++](https://notepad-plus-plus.org/downloads/) for Windows.
+2) [Assseq](https://ormbunkar.se/assseq/downloads/), a programme for processing Sanger sequences  
 
 ## 1. Trimming Sanger sequences and assembling contigs
 
@@ -31,3 +33,8 @@ Start by downloading your sequences from StudentPortalen (**Documents -> Labs ->
 Trim poor quality bases and assemble into a contig (**Assemble -> Reassemble everything with CAP3 external assembler plugin**). You can now edit the consensus sequence (only if necessary) or reverse complement it if it is in the incorrect orientation. Save the consensus sequence (**File -> Save consensus as Fasta**) (be sure to give it a good name - the name of the mushroom and the gene).
 
 *Imp*: Verify that you actually did amplify a mushroom and the correct gene by [BLASTing](https://blast.ncbi.nlm.nih.gov/Blast.cgi) your consensus sequence.
+
+
+## 2. Assembling datasets for each locus
+
+To build your phylogenies, you will need sequences from other taxa in your assigned group. This is a non-trivial task and it can be time consuming to assemble your dataset. 
