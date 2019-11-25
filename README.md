@@ -17,7 +17,24 @@ The objective of this lab is to use the sequence reads that you generated in con
 
 ## Programs required
 1) A simple text editor to view and edit files in plain text format. I recommend [TextWrangler or BBEdit](https://www.barebones.com/products/textwrangler/) for Mac and [Notepad++](https://notepad-plus-plus.org/downloads/) for Windows.
-2) [Assseq](https://ormbunkar.se/assseq/downloads/), a programme for processing Sanger sequences  
+2) [Assseq](https://ormbunkar.se/assseq/downloads/), a programme for processing Sanger sequences
+3) [AliView](https://github.com/AliView/AliView), an alignment viewer and editor. You can download it [here](http://www.ormbunkar.se/aliview/downloads/)
+4) [Perl](https://www.perl.org/get.html), a programming language.
+<details>
+<summary>It may already be installed on your computer so check first</summary>
+<br>
+On Mac/Linux:
+  type the following at the command prompt:
+```
+  perl -v
+```
+If it is not installed, you will get a message like this: "perl: command not found".
+  
+On Windows, use the *find* programme to search for perl. Alternatively, type "perl -v" at the command prompt.
+<details>
+  
+5) [PAUP*](http://phylosolutions.com/paup-test/), for doing parsimony analysis
+6) MrBayes.
 
 ## 1. Trimming Sanger sequences and assembling contigs
 
@@ -70,7 +87,18 @@ ggtaagtgctctagtacaaacacccccaatattgtgatataattaaaattatattcatat
 tctgttgccagattttacacttttaggctatattagagccatcttctttgaagcgttgtc
 tatgcatcgatcgacgactg
 ```
+
+I recommend NOT having any white spaces in your fasta header as it is likely that programmes you will use downstream will complain.
 </details>
 
 
+## 3. Multiple Sequence Alignment
 
+You will work with the multiple sequence alignments (MSA) in the program **AliView**. This program allows you to manipulate the sequences and the MSA, but does not do automated multiple sequence alignment itself. However, [Muscle](http://www.drive5.com/muscle/) comes packed with AliView and can be called from within the main view, doing the MSA seamlessly. There are many different MSA programs; a commonly used program is ClustalW but it is now dated, and Muscle performs much better. Another commonly used
+program that performs well in benchmark studies is mafft; but mafft is difficult to pack with other
+software and has to be installed separately. However, no matter which program you use for the
+alignment it is recommended to check the alignment manually as no program works perfectly.
+To do the multiple alignment we first need to combine the individual sequences of each gene into a
+single file (so three different files in total). This can be done either by adding them one by one in
+AliView, or to just concatenate (and possibly edit in a text editor) all single sequence files in the
+terminal.
