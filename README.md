@@ -61,6 +61,7 @@ FASTA format is a text-based format for representing either nucleotide sequences
   
 Example of 2 sequences in FASTA format:
 
+```
 >sequence A
 ggtaagtcctctagtacaaacacccccaatattgtgatataattaaaattatattcatat
 tctgttgccagaaaaaacacttttaggctatattagagccatcttctttgaagcgttgtc
@@ -68,6 +69,7 @@ tctgttgccagaaaaaacacttttaggctatattagagccatcttctttgaagcgttgtc
 ggtaagtgctctagtacaaacacccccaatattgtgatataattaaaattatattcatat
 tctgttgccagattttacacttttaggctatattagagccatcttctttgaagcgttgtc
 tatgcatcgatcgacgactg
+```
 </details>
 
 
