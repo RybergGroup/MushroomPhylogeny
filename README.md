@@ -104,5 +104,15 @@ To do the multiple alignment we first need to combine the individual sequences o
 <details>
 <summary>On Macs/Linux</summary>
 <br>
-Open the **terminal** and navigate to the folder where your fasta files are present. This can be done by using the command **cd** 
+(Call the lab assisstant if you need help)
+Open the terminal and navigate to the folder where your fasta files are present. This can be done by using the command "cd" followed by the path of the folder. For instance, if your fasta files are in the folder "rpb1" which is in the folder "mushroom_phylogeny" on your desktop, type the following:
+``` 
+cd /Desktop/mushroom_phylogeny/rpb1
+```
+
+Next, concatenate the sequences into a single fasta file using the command "cat"
+
+```
+cat *.fst > rpb1.fasta
+```
 </details>
