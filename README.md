@@ -31,7 +31,7 @@ On Mac/Linux:
 If it is not installed, you will get a message like this: "perl: command not found".
   
 On Windows, use the *find* programme to search for perl. Alternatively, type "perl -v" at the command prompt.
-<details>
+</details>
   
 5) [PAUP*](http://phylosolutions.com/paup-test/), for doing parsimony analysis
 6) MrBayes.
