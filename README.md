@@ -106,8 +106,9 @@ To do the multiple alignment we first need to combine the individual sequences o
 <br>
 (Call the lab assisstant if you need help)
 Open the terminal and navigate to the folder where your fasta files are present. This can be done by using the command "cd" followed by the path of the folder. For instance, if your fasta files are in the folder "rpb1" which is in the folder "mushroom_phylogeny" on your desktop, type the following:
+
 ``` 
-cd /Desktop/mushroom_phylogeny/rpb1
+cd Desktop/mushroom_phylogeny/rpb1
 ```
 
 Next, concatenate the sequences into a single fasta file using the command "cat"
@@ -116,3 +117,36 @@ Next, concatenate the sequences into a single fasta file using the command "cat"
 cat *.fst > rpb1.fasta
 ```
 </details>
+
+<details>
+<summary>On Windows</summary>
+<br>
+(Call the lab assisstant if you need help)
+Open the command prompt and navigate to the folder where your fasta files are present. This can be done by using the command "cd" followed by the path of the folder. For instance, if your fasta files are in the folder "rpb1" which is in the folder "mushroom_phylogeny" on your desktop, type the following:
+
+``` 
+cd Desktop\mushroom_phylogeny\rpb1
+```
+(NB: You may need to first change to the correct drive. To access another drive, type the drive's letter, followed by ":". For instance, if you wanted to change the drive from "C:" to "D:", you should type "d:" and then press Enter on your keyboard.)
+
+Next, concatenate the sequences into a single fasta file using the command "type"
+
+```
+type *.fst > rpb1.fasta
+```
+</details>
+
+
+In AliView, you will then need to:
+• Align your sequences. Either use the built-in aligner (Muscle) or use the [online](https://mafft.cbrc.jp/alignment/server/) MAFFT aligner 
+• Make sure that they are in the same reading direction (possibly reverse-complementing
+some of the sequences) and re-doing the alignment.
+• Trim sequences to span the same homologous segment (i.e., the one between the primers in
+your sequence).
+• Edit the names of the sequences so that the same species have exactly the same name in
+each of the three files, and so that the names only contain alphanumerical characters and
+underscores (one for each gene).
+• Save the aligned file.
+• Export as NEXUS.
+
+In the end, you should have three FASTA files, one for each gene, and three NEXUS files, one for each gene.
