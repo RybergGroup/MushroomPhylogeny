@@ -25,6 +25,7 @@ The objective of this lab is to use the sequence reads that you generated in con
 <br>
 On Mac/Linux:
   type the following at the command prompt:
+
 ```
   perl -v
 ```
