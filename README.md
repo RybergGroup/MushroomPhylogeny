@@ -139,15 +139,11 @@ type *.fst > rpb1.fasta
 
 
 In AliView, you will then need to:
-• Align your sequences. Either use the built-in aligner (Muscle) or use the [online](https://mafft.cbrc.jp/alignment/server/) MAFFT aligner 
-• Make sure that they are in the same reading direction (possibly reverse-complementing
-some of the sequences) and re-doing the alignment.
-• Trim sequences to span the same homologous segment (i.e., the one between the primers in
-your sequence).
-• Edit the names of the sequences so that the same species have exactly the same name in
-each of the three files, and so that the names only contain alphanumerical characters and
-underscores (one for each gene).
-• Save the aligned file.
-• Export as NEXUS.
+- Align your sequences. Either use the built-in aligner (Muscle) or use the [online](https://mafft.cbrc.jp/alignment/server/) MAFFT aligner.
+- Make sure that they are in the same reading direction (possibly reverse-complementing some of the sequences) and re-doing the alignment.
+- Trim sequences to span the same homologous segment (i.e., the one between the primers in your sequence).
+- Edit the names of the sequences so that the same species have exactly the same name in each of the three files, and so that the names only contain alphanumerical characters and underscores (one for each gene).
+- Save the aligned file.
+- Export as NEXUS.
 
 In the end, you should have three FASTA files, one for each gene, and three NEXUS files, one for each gene.
