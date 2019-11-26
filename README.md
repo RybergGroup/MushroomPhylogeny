@@ -36,6 +36,7 @@ On Windows, use the *find* programme to search for perl. Alternatively, type "pe
   
 5) [PAUP*](http://phylosolutions.com/paup-test/), for doing parsimony analysis
 6) MrBayes.
+7) [FigTree](https://github.com/rambaut/figtree/releases), for viewing phylogenetic trees
 
 ## 1. Trimming Sanger sequences and assembling contigs
 
@@ -171,10 +172,17 @@ charpartition genes = 28S:28S, RPB1:RPB1, RPB2:RPB2;
 END;
 ```
 
+<details>
+<summary>What is a nexus file?</summary>
+<br>
+
+
+</details>
+
 ## 4. Parsimony analysis
 
 There are many different programs to perform parsimony analyses. For very large datasets (>1000 tips) [TNT](http://www.zmuc.dk/public/phylogeny/tnt/) is recommended. Here you will use PAUP* as in the Screwed analysis (except for step 2). PAUP* gives you large control of the analysis, and contain many different methods and tests you can use.
 
 - Do a parsimony analysis with bootstrap for each gene.
 - Do a parsimony analysis with bootstrap for the combined data set.
-- Do a ILD test (modify and use code snippet ILD-snippet.nxs) on the combined file. The code snippet will perform the ILD run and by including this PAUP block in your nexus file, PAUP will run the analysis automatically when you execute the file with PAUP*. The ILD test is explained as partition homogenity in chapter 9 of the book.
+- Do an ILD test (modify and use code snippet ILD-snippet.nxs) on the combined file. The code snippet will perform the ILD run and by including this PAUP block in your nexus file, PAUP will run the analysis automatically when you execute the file with PAUP*. The ILD test is explained as partition homogeneity in chapter 9 of the book.
