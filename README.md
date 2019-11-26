@@ -147,3 +147,23 @@ In AliView, you will then need to:
 - Export as NEXUS.
 
 In the end, you should have three FASTA files, one for each gene, and three NEXUS files, one for each gene.
+
+
+
+### Creating the concatenated dataset
+
+In addition to analyzing each gene separately, you will also test if the genes can be analyzed as one big data set and you will also actually analyze the combined data set. To do this you need to create a fourth data file that combines the previous three (but you also need to keep those intact...).
+
+There are many ways to concatenate sequences but none really straight forward. The otherwise commonly used software for working with alignments do not have a really easy way to do it, and the alternative is to install an extra program, do it manually, or write a script. The problem with doing it manually is that file formats that allow keeping different genes in different blocks also include other information so that the files cannot be directly concatenated. They usually also require that the OTUs are in the same order for all genes, and that all OTUs are present for all genes (possibly only with gaps). In file formats where you cannot have the genes in different blocks you need to add the sequences of each gene to each OTU, and for the OTUs lacking the gene you need to add gaps instead. The problem is not too difficult to solve with a script, but that require some scripting skills and writing a script always take some time. However, since this is a common problem, scripts or small command line programs are already available, for example cat_fasta.pl at (https://github.com/mr-y/my_bioinfPerls). So use this or another script/program to concatenate your sequences. cat_fasta.pl only accept fasta format, so use your fasta formatted files. The cat_fasta.pl also produce a file with the start and end position for each gene. Check the output since cat_fasta.pl is very strict in how it interprets names, so any slight difference in the given names to sequences may result in that they are not concatenated but treated as coming from different taxa.
+
+
+Convert the concatenated alignment file into nexus format using AliView, and edit the sets block to contain the different partitions as charsets e.g.:
+
+```
+BEGIN SETS;
+charset 28S = 1-703;
+charset RPB1 = 704-1307;
+charset RPB2 = 1308-1702;
+charpartition genes = 28S:28S, RPB1:RPB1, RPB2:RPB2;
+END;
+```
