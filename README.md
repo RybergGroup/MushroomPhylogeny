@@ -183,3 +183,10 @@ There are many different programs to perform parsimony analyses. For very large 
 - Do a parsimony analysis with bootstrap for each gene.
 - Do a parsimony analysis with bootstrap for the combined data set.
 - Do an ILD test (modify and use code snippet ILD-snippet.nxs) on the combined file. The code snippet will perform the ILD run and by including this PAUP block in your nexus file, PAUP will run the analysis automatically when you execute the file with PAUP*. The ILD test is explained as partition homogeneity in chapter 9 of the book.
+
+<details>
+<summary>What is an ILD test?</summary>
+<br>
+Very briefly, the Incongruence Length Difference (ILD) test quantifies the conflicts that can occur between sets of characters from different data sources, such as nuclear or mitochondrial DNA sequences, protein sequences, or even morphological traits. It tests whether different genes are "congruent" (low ILD score; i.e. contain a similar phylogenetic signal), or "incongruent" (high ILD score; i.e. contain different phylogenetic signal and should not be concatenated).   
+</details>
+
