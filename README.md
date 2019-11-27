@@ -172,12 +172,9 @@ charpartition genes = 28S:28S, RPB1:RPB1, RPB2:RPB2;
 END;
 ```
 
-<details>
-<summary>What is a nexus file?</summary>
-<br>
 
+[What is a nexus file?](https://en.wikipedia.org/wiki/Nexus_file)
 
-</details>
 
 ## 4. Parsimony analysis
 
