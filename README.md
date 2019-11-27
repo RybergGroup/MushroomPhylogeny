@@ -187,7 +187,7 @@ There are many different programs to perform parsimony analyses. For very large 
 <details>
 <summary>What is an ILD test?</summary>
 <br>
-Very briefly, the Incongruence Length Difference (ILD) test quantifies the conflicts that can occur between sets of characters from different data sources, such as nuclear or mitochondrial DNA sequences, protein sequences, or even morphological traits. It tests whether different genes are "congruent" (low ILD score; i.e. contain a similar phylogenetic signal), or "incongruent" (high ILD score; i.e. contain different phylogenetic signal and should not be concatenated).   
+Very briefly, the Incongruence Length Difference (ILD) test quantifies the conflicts that can occur between sets of characters from different data sources, such as nuclear or mitochondrial DNA sequences, protein sequences, or even morphological traits. It tests whether different genes are "congruent" (low ILD score; high p-value; i.e. contain a similar phylogenetic signal), or "incongruent" (high ILD score; low p-value; i.e. contain different phylogenetic signal and should not be concatenated).   
 </details>
 
 <details>
