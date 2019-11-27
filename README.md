@@ -190,3 +190,26 @@ There are many different programs to perform parsimony analyses. For very large 
 Very briefly, the Incongruence Length Difference (ILD) test quantifies the conflicts that can occur between sets of characters from different data sources, such as nuclear or mitochondrial DNA sequences, protein sequences, or even morphological traits. It tests whether different genes are "congruent" (low ILD score; i.e. contain a similar phylogenetic signal), or "incongruent" (high ILD score; i.e. contain different phylogenetic signal and should not be concatenated).   
 </details>
 
+<details>
+<summary>ILD snippet to add to nexus file of concatenated genes</summary>
+<br>
+  
+```
+BEGIN PAUP;
+[Start logging to a file called ildtest.log in the current working directory]
+log file=ildtest.log;
+
+[Do the ILD test; note that the partition genes must have been defined in your NEXUS file as charpartition = genes, e.g., like the following example]
+[ BEGIN SETS;
+[         charset 28S = 1-707;                                    ]
+[         charset RPB1 = 708-1306;                                ]
+[         charset RPB2 = 1307-2791;                               ]
+[         charpartition genes = tbr1:tbr1, 16S:16S, RAG1:RAG1;    ]
+[ END;                                                            ]
+
+hompart partition= genes nreps=100 / start=stepwise addseq=random nreps=10 savereps=no randomize=addseq rstatus=no hold=1 swap=tbr multrees=yes;
+
+log stop;
+END;
+```
+</details>
