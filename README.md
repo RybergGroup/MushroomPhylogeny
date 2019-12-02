@@ -215,3 +215,17 @@ log stop;
 END;
 ```
 </details>
+
+
+## 4. Model test
+
+To do a Maximum Likelihood or Bayesian analysis, we need an explicit and adequate, but not too complex, model. There are several ways (LR-test, AIC, ...) to objectively select a model, which are implemented in jmodeltest2.
+
+Run JModelTest on each of the three genes separately and identify the best model according to the Akaike information criterion (AIC). You do this in JModelTest by:
+
+• Loading the DNA alignments.
+• Compute Likelihood scores (default settings work).
+• Do AIC calculations.
+• Show results in table
+
+Note which model is the preferred one for each gene and what this model means in terms of parameters.
