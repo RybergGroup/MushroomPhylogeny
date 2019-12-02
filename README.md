@@ -302,7 +302,7 @@ END;
 </details>
 
 See [this github page](https://gist.github.com/brantfaircloth/895282) to see how to set different models in MrBayes.
-See [this wiki page](http://mrbayes.sourceforge.net/wiki/index.php?title=Evolutionary_Models_Implemented_in_MrBayes_3&oldid=5249) to undrstand the different commands in MrBayes.
+See [this wiki page](http://mrbayes.sourceforge.net/wiki/index.php?title=Evolutionary_Models_Implemented_in_MrBayes_3&oldid=5249) to understand the different commands in MrBayes.
 
 
 
