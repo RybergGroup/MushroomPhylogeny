@@ -217,7 +217,7 @@ END;
 </details>
 
 
-## 4. Model test
+## 5. Model test
 
 To do a Maximum Likelihood or Bayesian analysis, we need an explicit and adequate, but not too complex, model. There are several ways (LR-test, AIC, ...) to objectively select a model, which are implemented in jmodeltest2.
 
@@ -229,3 +229,74 @@ Run JModelTest on each of the three genes separately and identify the best model
 - Show results in table
 
 Note which model is the preferred one for each gene and what this model means in terms of parameters.
+
+
+
+## 6. Bayesian analysis
+
+You will run a Bayesian analysis on the combined data set using the program MrBayes; you have the manual 3.2 available.
+
+You will need to decide on probabilistic model for your data. For this practical you will have separate models for the three partitions, as declared using JModelTest, and also have different average substitution rates for the three partitions, just sharing the same tree topology and relation.
+
+A Bayesian analysis is a bit different compared to the optimality criterion methods like parsimony and maximum likelihood in a few respects:
+
+- You need to specify prior probabilities on all your parameters. It is common to try to use uniform priors, i.e. priors where all possible hypotheses have the same probability. For this project we can settle with the default settings in MrBayes, giving us uninformative priors where possible and reasonable naivë priors for other parameters (like branch length).
+- You do not search for an optimal parameter set but explores the parameter space through an infinite Markov-Chain Monte Carlo (mcmc) walk where the state of the parameters are saved every nth generation (command mcmc in MrBayes). In practice we run a number of generations and check if we have done enough (next step). 
+- After the first part has been discarded (burn-in) the remaining generations' output can be used to estimate parameter values, including credibility intervals. However, this means that you have to assess the convergence of the parameters (using the software tracer) to decide how many generations to discard as burn-in and if you have enough generations after burnin to adequately estimate the parameter distributions.
+- Finally, you need to compute the parameter values from the generations after burn-in (commands sumt and sump in MrBayes).
+
+
+You will set up a nexus file to run the analysis in MrBayes, test it on your laptop and when it can be launched without problems, save the nexus file and give it to the lab assistant according to her instructions so it can be run on the UPPMAX cluster.
+
+To set up the file, use the code snippet Bayes-snippet.nxs (see dropdown area at end of this section); paste it into your nexus file and modify the lines where necessary. Please also modify the name of the log file that will be generated (from *combined-run.log* to *combined-run-[Mushroom group].log*). You can then run MrBayes from the command line:
+
+```
+mb myfile.nxs
+```
+
+Several files will be generated, including a general log file (combined-run.log if you stayed with the snippets names), file containing sampled trees (.t) and other parameters (.p). between branch lengths.
+
+<details>
+<summary>Bayes-snippet.nxs</summary>
+<br>
+  
+```
+BEGIN mrbayes;
+
+
+[28S_RPB1_RPB2_Mushroom_party. Edit name of log file to include your mushroom clade.]
+log start filename=Combined-run.log;
+
+
+charset 28S = 1-814;
+charset RPB1 = 815-1378;
+charset RPB2 = 1369-2018;
+
+partition genes = 3: 28S,RPB1,RPB2;
+
+set partition = genes;
+
+
+
+[This corresponds to a GTR+Gamma+Inv model for partition 1 and 3. If you settled on another model, change this]
+lset applyto=(1,2,3) nst=6 rates=invgamma;
+
+
+[This makes the base frequency, rate, gamma and proportion invariant parameters SEPARATE for each partition]
+unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all);
+
+[This lets the different partitions have different average substitution rates]
+prset applyto=(all) ratepr=variable;
+
+
+
+[This runs a Markov-Chain Monte Carlo simulation for 10 000 000 generations]
+mcmc ngen=10000000 nruns=2 printfreq=1000 savebrlens=yes;
+
+sump burnin=25000;
+sumt burnin=25000;
+
+quit;
+END;
+```
+</details>
