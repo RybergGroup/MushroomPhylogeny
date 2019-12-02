@@ -302,3 +302,29 @@ END;
 </details>
 
 See [this github page](https://gist.github.com/brantfaircloth/895282) to see how to set different models in MrBayes. 
+
+
+
+## 7. Evaluate the Bayesian analysis
+
+Before evaluating the results, it is a good idea to look at the MRBAYES block in your nexus file and try to understand what it means...
+
+Running MrBayes will produce several output files, of particular interest are:
+- Files with parameters listed every nthgeneration (.p).
+- Files with trees (topologies and branch lengths) saved every nth generation (.t).
+- A file with statistics on the Markov chain performance (.mcmc).
+
+We have been running MrBayes with two independent, parallel chains, thus generating two sets of .p and .t files. This enable us to compare the two runs and see if they have converged on the same distribution.
+
+We also let MrBayes compute the summary results of the of the chains, in terms of geometric mean values of the parameters (including branch lengths) and consensus tree for topology, producing the files
+- Parameter statistics (.pstat)
+- Consensus tree with branch lengths (.tre)
+
+Note that we do not really know at this stage that the results in .pstat and .tre are reliable; they are based on the assumption that the 10 000 000 generations we have run are enough and that discarding the first 2 500 000 generations as burn-in is enough. This we have to assess.
+Use the program Tracer to open and examine the .p files:
+* Look at the traces for each parameter of each (of the two) chain:
+  * Have they converged?
+  * Is the burn-in adequate?
+* Look at the trace for the combined chains, once again examining each parameter. Have they converged on the same distribution?
+* Look at the Traces table for the combined chains, and in the ESS (which stands for Effective Sample Size); if they are all above 100 at an adequate burn-in, we have been running the mcmc for enough generations.
+
