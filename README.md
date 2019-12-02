@@ -223,9 +223,9 @@ To do a Maximum Likelihood or Bayesian analysis, we need an explicit and adequat
 
 Run JModelTest on each of the three genes separately and identify the best model according to the Akaike information criterion (AIC). You do this in JModelTest by:
 
-• Loading the DNA alignments.
-• Compute Likelihood scores (default settings work).
-• Do AIC calculations.
-• Show results in table
+- Loading the DNA alignments.
+- Compute Likelihood scores (default settings work).
+- Do AIC calculations.
+- Show results in table
 
 Note which model is the preferred one for each gene and what this model means in terms of parameters.
