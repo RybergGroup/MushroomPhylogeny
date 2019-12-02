@@ -328,3 +328,17 @@ Use the program Tracer to open and examine the .p files:
 * Look at the trace for the combined chains, once again examining each parameter. Have they converged on the same distribution?
 * Look at the Traces table for the combined chains, and in the ESS (which stands for Effective Sample Size); if they are all above 100 at an adequate burn-in, we have been running the mcmc for enough generations.
 
+In the Trace table in Tracer you also see the estimated values for the parameters. Interpret these in the light of the used model – what do they tell us?
+
+Look in the log file and particularly for the part following “Active parameters”. What are the priors? Which can be considered uninformative?
+
+If the burn-in need to be changed you can re-run the sumt commands in MrBayes with your new burn-in. Be careful not to re-run the mcmc command as you the risk to overwrite your .p and .t files.
+
+Re-running sumt will produce a new .tre file that should be an apropriate estimate of the posterior tree distribution.
+
+Finally use the program FigTree to open the .tre file and look at the tree resulting from the Bayesian analysis. You can use FigTree to make nice looking trees for your report and presentation.
+* Root the tree using your designated outgroup (is it possible?).
+* Display the posterior probabilities on the branches
+* How does the tree compare to the results from the parsimony analysis of the combined data set?
+
+You can export the tree in pdf or svg format and improve the layout further in a vector graphic image editor (e.g. Illustrator or Inkscape).
