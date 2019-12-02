@@ -300,3 +300,5 @@ quit;
 END;
 ```
 </details>
+
+See [this github page](https://gist.github.com/brantfaircloth/895282) to see how to set different models in MrBayes. 
