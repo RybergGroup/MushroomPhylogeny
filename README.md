@@ -304,7 +304,7 @@ END;
 See [this github page](https://gist.github.com/brantfaircloth/895282) to see how to set different models in MrBayes.
 See [this wiki page](http://mrbayes.sourceforge.net/wiki/index.php?title=Evolutionary_Models_Implemented_in_MrBayes_3&oldid=5249) to understand the different commands in MrBayes.
 
-Here are two articles to help you better understand the gamma distribution: [article 1](https://link.springer.com/article/10.1007/BF00160154) and article 2(https://www.sciencedirect.com/science/article/pii/0169534796100410) (article 2 is perhaps easier to understand)
+Here are two articles to help you better understand the gamma distribution: [article 1](https://link.springer.com/article/10.1007/BF00160154) and [article 2](https://www.sciencedirect.com/science/article/pii/0169534796100410) (article 2 is perhaps easier to understand)
 
 
 
