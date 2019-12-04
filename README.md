@@ -279,7 +279,7 @@ set partition = genes;
 
 
 [This corresponds to a GTR+Gamma+Inv model for partition 1 and 3. If you settled on another model, change this]
-lset applyto=(1,2,3) nst=6 rates=invgamma;
+lset applyto=(1,3) nst=6 rates=invgamma;
 
 
 [This makes the base frequency, rate, gamma and proportion invariant parameters SEPARATE for each partition]
