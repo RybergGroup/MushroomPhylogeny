@@ -55,6 +55,7 @@ Trim poor quality bases and assemble into a contig (**Assemble -> Reassemble eve
 
 *Imp*: Verify that you actually did amplify a mushroom sequence by [BLASTing](https://blast.ncbi.nlm.nih.gov/Blast.cgi) your consensus sequence.
 
+Fill in your findings in [google sheets page](https://docs.google.com/spreadsheets/d/1nfNAsZtuzicLh_W1bSWl-pBTXshr-b7POu39lvsNn-8/edit#gid=0)!
 
 ## 2. Assembling datasets for each locus
 
