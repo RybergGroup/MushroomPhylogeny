@@ -62,7 +62,7 @@ Fill in your findings in [google sheets page](https://docs.google.com/spreadshee
 To build your phylogenies, you will need sequences from other taxa in your assigned group. This is a non-trivial task and it can be time consuming to assemble your dataset. 
 
 There are several good starting points for building your datasets:
-1) The NCBI nucleotide database (GenBank)——an open access, annotated collection of all publicly available nucleotide sequences. Use this to find sequences for 28S/LSU, RPB1 and RPB2. The [Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) is a good place to start. Simply search for your group of interest and click on the the *Nucleotide* records. 
+1) The NCBI nucleotide database (GenBank)——an open access, annotated collection of all publicly available nucleotide sequences. Use this to find sequences for the genes you have selected. The [Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) is a good place to start. Simply search for your group of interest and click on the the *Nucleotide* records. 
 
 2) The [SILVA database](https://www.arb-silva.de/) which is a database of ribosomal genes (18S and 28S). 
 
@@ -72,7 +72,7 @@ If possible, try to download sequences for the three loci from the same species.
 **NB: Don't forget to retrieve sequences for the outgroup!**
 
 
-The output from both the contig assembly (your own sequences) and the sequences you have downloaded from online databases should be stored as individual FASTA files (see below for description of the fasta format). You will have to edit the header to include only the information you are interested in. You will need both the species names, and the accession number for later use (in your report). Make sure that you have not edited any sequences using TextEdit/Microsoft Word etc. wich saves the files as RTF/doc/something else rather than as text files (use TextWrangler/BBEdit/Notepad++ for editing). 
+The sequences you have downloaded from online databases should be stored as individual FASTA files (see below for description of the fasta format). You will have to edit the header to include only the information you are interested in. You will need both the species names, and the accession number for later use (in your report). Make sure that you have not edited any sequences using TextEdit/Microsoft Word etc. wich saves the files as RTF/doc/something else rather than as text files (use TextWrangler/BBEdit/Notepad++ for editing). 
 
 <details>
 <summary>What is a fasta file?</summary>
