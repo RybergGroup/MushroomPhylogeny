@@ -294,8 +294,8 @@ prset applyto=(all) ratepr=variable;
 [This runs a Markov-Chain Monte Carlo simulation for 10 000 000 generations]
 mcmc ngen=10000000 nruns=2 printfreq=1000 savebrlens=yes;
 
-sump burnin=25000;
-sumt burnin=25000;
+sump burnin=2500;
+sumt burnin=2500;
 
 quit;
 END;
