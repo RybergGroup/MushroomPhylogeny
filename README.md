@@ -71,6 +71,7 @@ There are several good starting points for building your datasets:
 If possible, try to download sequences for the three loci from the same species, or even same specimen (look for voucher annotations). It is probable that sequences for one locus will be easier to find. It is good to have one loci that all taxa have, but it is not necessary for all taxa to have all loci. 
 **NB: Don't forget to retrieve sequences for the outgroup!**
 
+When selecting species, have the question you should address in mind, and select species so that you can address the question. If having a question about the evolution of some guild (e.g. ectomycorrhiza) [FUNGuild](http://www.funguild.org/query.php?qText=&qDB=funguild_db&qField=taxon) may be a good resourse to find the guild of different taxa.
 
 The sequences you have downloaded from online databases should be stored as individual FASTA files (see below for description of the fasta format). You will have to edit the header to include only the information you are interested in. You will need both the species names, and the accession number for later use (in your report). Make sure that you have not edited any sequences using TextEdit/Microsoft Word etc. wich saves the files as RTF/doc/something else rather than as text files (use TextWrangler/BBEdit/Notepad++ for editing). 
 
