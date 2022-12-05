@@ -149,7 +149,7 @@ In AliView, you will then need to:
 - Trim sequences to span the same homologous segment (i.e., the one between the primers in your sequence).
 - Edit the names of the sequences so that the same species have exactly the same name in each of the three files, and so that the names only contain alphanumerical characters and underscores (one for each gene).
 - Save the aligned file.
-- Export as NEXUS.
+- Export as [NEXUS](https://en.wikipedia.org/wiki/Nexus_file).
 
 In the end, you should have three FASTA files, one for each gene, and three NEXUS files, one for each gene.
 
