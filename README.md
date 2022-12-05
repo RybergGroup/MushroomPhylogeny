@@ -186,7 +186,7 @@ There are many different programs to perform parsimony analyses. For very large 
 
 - Do a parsimony analysis with bootstrap for each gene.
 - Do a parsimony analysis with bootstrap for the combined data set.
-- Do an ILD test (modify and use code snippet ILD-snippet.nxs) on the combined file. The code snippet will perform the ILD run and by including this PAUP block in your nexus file, PAUP will run the analysis automatically when you execute the file with PAUP*. The ILD test is explained as partition homogeneity in chapter 9 of the book.
+- Do an [ILD test](http://paup.phylosolutions.com/documentation/faq/#phtest) on the combined file. The ILD test is explained as partition homogeneity in chapter 9 of the book.
 
 <details>
 <summary>What is an ILD test?</summary>
