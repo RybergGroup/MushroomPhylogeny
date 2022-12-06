@@ -1,6 +1,6 @@
 # Parsimony analysis
-PAUP\* (pronounced Pop-Star) can be used for phylogenetic analysis under the parsimony criteria (and ML which the \* indicate).
-First you need to load your data file 
+PAUP\* (pronounced Pop-Star) can be used for phylogenetic analysis under the parsimony criteria (and ML which the \* indicate). Here the instructions are on the command line way of doing things, but if you have the GUI version you can do it the same way through menue options.
+First thing you need to do is to load your data file; **exe FileName.nex** (Menu option is File->Open then browse to select file, and click the Execute option instead of Edit).
 
 ## Make a point estimate - Search for most parsimonious trees
 We will use the heuristic search method. Learn about this by typing **hsearch** or **hs**.
