@@ -188,6 +188,8 @@ There are many different programs to perform parsimony analyses. For very large 
 - Do a parsimony analysis with bootstrap for the combined data set.
 - Do an [ILD test](http://paup.phylosolutions.com/documentation/faq/#phtest) on the combined file. The ILD test is explained as partition homogeneity in chapter 9 of the book.
 
+For instructions on how you can search for the best tree look in [paup.md](https://github.com/RybergGroup/MushroomPhylogeny/blob/master/paup.md), but you may want to adjust the search to fit your data. More information is available [here](http://paup.phylosolutions.com/).
+
 <details>
 <summary>What is an ILD test?</summary>
 <br>
