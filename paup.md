@@ -4,7 +4,7 @@ First thing you need to do is to load your data file; **exe FileName.nex** (Menu
 
 ## Make a point estimate - Search for most parsimonious trees
 We will use the heuristic search method. Learn about this by typing **hsearch** or **hs**.
-1. Do a heuristic search; you can use the default search method TBR: **hs addseq=random nreps=100**. This means it will add sequences randomly,
+1. Do a heuristic search; you can use the default branch swaping method TBR: **hs addseq=random nreps=100**. This means it will add sequences randomly,
 instead of the order you have them in the file. The default number of repetitions for the search is 10, but this isn't enough, so we'll increase it to 1001.
 You may get this warning: !
 -Max trees has been reached, increase trees? **Yes**
