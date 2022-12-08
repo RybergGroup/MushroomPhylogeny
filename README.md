@@ -238,7 +238,7 @@ Note which model is the preferred one for each gene and what this model means in
 
 ## 6. Bayesian analysis
 
-You will run a Bayesian analysis on the combined data set using the program MrBayes; you have the manual 3.2 available.
+You will run a Bayesian analysis on the combined data set using the program [MrBayes 3.2](https://nbisweden.github.io/MrBayes/download.html).
 
 You will need to decide on probabilistic model for your data. For this practical you will have separate models for the three partitions, as declared using JModelTest, and also have different average substitution rates for the three partitions, just sharing the same tree topology and relation.
 
