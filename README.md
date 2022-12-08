@@ -234,7 +234,7 @@ Run JModelTest on each of the three genes separately and identify the best model
 
 Note which model is the preferred one for each gene and what this model means in terms of parameters.
 
-
+An alternative to JModelTest is [IQ-TREE](http://www.iqtree.org/). IQ-TREE is a program for ML analysis, but can also do [modeltesting](http://www.iqtree.org/doc/Tutorial#choosing-the-right-substitution-model) similar to JModelTest. IQ-TREE prefer the phylip format (.phy), but should also accept fasta format.
 
 ## 6. Bayesian analysis
 
